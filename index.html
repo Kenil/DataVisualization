@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>DataViz Assignment 2 Home page</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="index_style/carousel.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar-wrapper">
+    <div class="container">
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Data Visualization Assignment 2</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    <!-- Indicators -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="http://pinegrow.com/placeholders/img4.jpg" alt="First slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Interactive Story</h1>
+                    <p> Kenil P. Bhatt</p>
+                    <p><a class="btn btn-lg btn-primary" href="dataViz.html" role="button">Australian Open Data Visualization</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container marketing">
+    <div class="row featurette">
+        <div class="col-md-11">
+            <h2 class="featurette-heading">Sports and Data Visualization <span class="text-muted"><br>Gaining a competitive edge</span></h2>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" src="images/image1.jpg" alt="Generic placeholder image">
+            </div>
+            <p class="lead" align="justify">Proper nutrition, rigorous training and systematic fitness regimen have been staple of
+                excellent performance for many athlete. However, modern day athletes have one more tool in their bag to
+                gain a competitive edge over their opponents, data. Sport produces vast amount of data and it mind as
+                well be a garbage if not visualized properly. Thankfully, technology today has the ability to scrutinize
+                every part of that data. It does not whether it is a team sport or an individual sport, they all produce
+                data which can be studied to improve the outcome of future competitions. Athletes use it to perform
+                better and organizations use it to recruit best candidate to their organization, as it is portrayed in
+                movie Moneyball.  </p>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-11">
+            <h2 class="featurette-heading">Project Motivation <span class="text-muted">with Assumptions and Data</span></h2>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" src="images/image2.png" alt="Generic placeholder image">
+            </div>
+            <p class="lead" align="justify">As a passionate sport fan and technology enthusiast, I enjoyed this project a lot. The
+                motivation for this project was to visualize a given tennis data in a structured manor that would engage
+                the user while directly interacting with the application. For this project, I have used data
+                visualization tool called d3. d3, stands for Data-Driven Document, is a Javascript library that provides
+                wide range of interactive data visualization techniques. In my first assignment, I had performed a c
+                omparative study between two data related to Australian Open tennis match, accuracy and speed. For that
+                purpose of the study, I had defined accuracy as the percentage of first serves that landed in service
+                area in the first attempt only. Definition of accuracy is a vague concept in tennis as one can define it
+                in many ways. To remove that ambiguity I added two more element to that definition, number of aces and
+                number of errors. Player who is accurate will have higher number of aces and least number of errors. </p>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-11">
+            <h2 class="featurette-heading">Visualization & Methodology <span class="text-muted"><br>Rationale & Reasonings</span></h2>
+            <div class="col-md-8">
+                <img class="featurette-image img-responsive" src="images/fullscreen.png" alt="Generic placeholder image">
+            </div>
+            <p class="lead" align="justify">Tennis is a hierarchical sport, where two players compete to advance to next round. And best
+                way to visualize this hierarchical nature is by tree layout. Month of March is upon us and all
+                collegiate student know that it is time to create brackets. As you can see in the image it is very
+                similar to tree in nature, where winning player is the parent node while its children are parent node
+                itself and opposing player node. Thus, I initially used d3’s collapsible tree layout to create a bracket
+                like structure, which I successfully implemented (bracket_Layout.js file included in project folder).
+                But I scraped that implementation due to an angular nature of the plot which did not look good visually.
+                <br><br> My main goal was to create an interactive visualization that was easy to understand and use.
+                Improper data visualization is one of the major reason why people have different representation of same
+                data. To achieve this simple but complicated design, I created a following HTML layout. There is menu
+                bar with a drop down menu to select a year, four additional button in the body and large d3 canvas to
+                draw a tree. Four buttons are linked to three different attribute from the data and one to deselect the
+                selected attribute. Accuracy data is designated a green button, as it is a positive aspect of the data.
+                Aces are associated with speed and accuracy both, hence the orange button. Lastly, red button is linked
+                to error attribute as it is a negative aspect of the game. This color are seamlessly reflected on to
+                tree structure when user interacts with them.  </p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-11">
+            <h2 class="featurette-heading">Interactions & Results </h2>
+            <div align="center">
+            <div class="col-md-6">
+                <img class="featurette-image img-responsive" src="images/none.png" alt="Generic placeholder image">
+            </div>
+            <div class="col-md-6">
+                <img class="featurette-image img-responsive" src="images/accuracy.png" alt="Generic placeholder image">
+            </div>
+            <div class="col-md-6">
+                <img class="featurette-image img-responsive" src="images/aces.png" alt="Generic placeholder image">
+            </div>
+            <div class="col-md-6">
+                <img class="featurette-image img-responsive" src="images/errors.png" alt="Generic placeholder image">
+            </div>
+            </div>
+            <p class="lead" align="justify">d3 canvas can be zoomed and panned, which allows the user to focus on one part of the data
+                if desired. For interaction, user can select a year from drop down menu which will draw display node I
+                referred to as a champion node. Hovering is another interaction available for user. Hovering over
+                champion node will show a small profile of the player, while hovering over any other node will show a
+                statistics of the match. Two children node are displayed upon clicking on parent node. This two nodes
+                represent the previous round match that parent node won in order to reach the next round. In other
+                words, if parent node was in final round, then its children are in semi-final round. All this
+                information are showed to user when the mouse over a particular node. <br><br> An algorithm computes the
+                thickness of the link between nodes and changes its color to highlight the selected attribute. Actual
+                value of the attribute is also shown for faster analysis of the data. Too many graphs and charts or
+                animations tend to divert the users attention. I have developed a visualization that engages user to
+                interact without losing their attention.
+            </p>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2015 CSE 591 Data Visualization</p>
+    </footer>
+</div>
+</body>
+</html>
