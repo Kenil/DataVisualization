@@ -10,7 +10,7 @@ var nodeColor = "lightsteelblue",
     tempInnerHTML = null;
 
 var m = [20, 120, 20, 120],
-    w = 1500 - m[1] - m[3],
+    w = 1400 - m[1] - m[3],
     h = 800 - m[0] - m[2],
     i = 0,
     root;

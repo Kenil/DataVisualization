@@ -131,7 +131,7 @@ div#playerPic {
     cursor: move;
     border: 2px #555 dashed;
     background-color: #eeeeee;
-    width:1500px;
+    width:1400px;
     height:800px;
 }
 
@@ -146,3 +146,16 @@ div#playerPic {
     font: 15px sans-serif;
     fill: #000;
 }
+
+div#tableRight {
+    padding-top: 3px;
+    vertical-align: top;
+    width: 4000px;
+}
+
+div#infoDiv {
+    width: 300px;
+    height: 500px;
+    padding-left: 20px;
+}
+

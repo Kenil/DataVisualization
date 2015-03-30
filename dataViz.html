@@ -49,32 +49,59 @@
         </div>
     </div>
 </div>
-<!--<div class="container theme-showcase" align="center">
-
-    <h2 align="center">Select an Attribute</h2>
-    <p align="center">
-        <div class="btn-group">
-        <button type="button" class="btn btn-sm btn-default">&nbsp; &nbsp; None &nbsp; &nbsp;</button>
-        <button type="button" class="btn btn-sm btn-success">Accuracy</button>
-        <button type="button" class="btn btn-sm btn-warning">&nbsp; &nbsp; Aces &nbsp; &nbsp;</button>
-        <button type="button" class="btn btn-sm btn-danger">&nbsp; &nbsp; Errors &nbsp;&nbsp;</button>
-        </div>
-    </p>
-</div>
-<div align="center" class="center" id="chart"></div>
-<script src="bracket.js"></script>-->
 
 <div style="width: 100%; display: table;">
     <div style="display: table-row">
-        <div style="width: 600px; display: table-cell;"> <h2 align="center">Accuracy Attributes</h2>
-            <p align="center">
-            <div class="btn-group-vertical">
-                <button type="button" class="btn btn-sm btn-default">&nbsp; &nbsp; None &nbsp; &nbsp;</button>
-                <button type="button" class="btn btn-sm btn-success">1st Serve</button>
-                <button type="button" class="btn btn-sm btn-warning">&nbsp; &nbsp; Aces &nbsp; &nbsp;</button>
-                <button type="button" class="btn btn-sm btn-danger">&nbsp; &nbsp; Errors &nbsp;&nbsp;</button>
+        <div id="attrDiv" style="width: 600px; display: table-cell;">
+            <h2 align="center">Accuracy Attributes</h2>
+            <div style="width: 100%; display: table;">
+                <div style="display: table-row">
+                    <div style="width: 600px; display: table-cell;"> <div class="btn-group-vertical">
+                        <button type="button" class="btn btn-sm btn-default">&nbsp; &nbsp; None &nbsp; &nbsp;</button>
+                        <button type="button" class="btn btn-sm btn-success">1st Serve</button>
+                        <button type="button" class="btn btn-sm btn-warning">&nbsp; &nbsp; Aces &nbsp; &nbsp;</button>
+                        <button type="button" class="btn btn-sm btn-danger">&nbsp; &nbsp; Errors &nbsp;&nbsp;</button>
+                    </div> </div>
+                    <div style="display: table-cell;" id="tableRight">
+                        <p>Deselect All Attributes</p>
+                        <p>First Server Percentage</p>
+                        <p>Number of Aces Served</p>
+                        <p>Number of Unforced Errors</p>
+                    </div>
+                </div>
             </div>
-            </p> </div>
+            <h2></h2>
+            <div id="infoDiv" style="display: table-cell;"> <table class="table">
+                <p>For the purpose of this study, <b>Accuracy</b> is defined as least amount of errors, highest amount of aces, and higher percentage of first serve.
+                It is observed that player who excels in all three attributes (or is most accurate) is guaranteed to win.</p>
+                <thead>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Definition</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>First Serve</td>
+                    <td>The first of the two attempts to serve that a player is allowed at the beginning of a point. Success rate of first serve is measured in percentage. </td>
+                </tr>
+                <tr>
+                    <td>Aces</td>
+                    <td>Legal serve that is not touched by the receiver, winning the point </td>
+                </tr>
+                <tr>
+                    <td>Errors</td>
+                    <td>Error in a service or return shot that cannot be attributed to any factor other than poor judgement and execution by the player</td>
+                </tr>
+                </tbody>
+
+
+            </table>
+
+                <p> <b>NOTE:</b>There may exist more trends in the data and those are left for readers to find.</p>
+            </div>
+
+        </div>
         <div style="display: table-cell;">
             <h2 align="center">Is Accuracy Key To Success in Australian Open? </h2>
             <div align="center" class="center" id="chart">
@@ -113,7 +140,7 @@
 <div class="container marketing">
 <footer>
     <p class="pull-right"><a href="#">Back to top</a></p>
-    <p>© 2015 CSE 591 Data Visualization</p>
+    <p>Source: CSE 591 Data Visualization, Arizona State University</p>
 </footer>
 </div>
 </body>
