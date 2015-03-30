@@ -49,7 +49,7 @@
         </div>
     </div>
 </div>
-<div class="container theme-showcase" align="center">
+<!--<div class="container theme-showcase" align="center">
 
     <h2 align="center">Select an Attribute</h2>
     <p align="center">
@@ -62,17 +62,37 @@
     </p>
 </div>
 <div align="center" class="center" id="chart"></div>
-<script src="bracket.js"></script>
+<script src="bracket.js"></script>-->
+
+<div style="width: 100%; display: table;">
+    <div style="display: table-row">
+        <div style="width: 600px; display: table-cell;"> <h2 align="center">Accuracy Attributes</h2>
+            <p align="center">
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-sm btn-default">&nbsp; &nbsp; None &nbsp; &nbsp;</button>
+                <button type="button" class="btn btn-sm btn-success">1st Serve</button>
+                <button type="button" class="btn btn-sm btn-warning">&nbsp; &nbsp; Aces &nbsp; &nbsp;</button>
+                <button type="button" class="btn btn-sm btn-danger">&nbsp; &nbsp; Errors &nbsp;&nbsp;</button>
+            </div>
+            </p> </div>
+        <div style="display: table-cell;">
+            <h2 align="center">Is Accuracy Key To Success in Australian Open? </h2>
+            <div align="center" class="center" id="chart">
+                <script src="bracket.js"></script>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div id="toolTip" style="display:none">
     <div id="head" class="header"></div>
     <div id="header2" class="header2"></div>
     <div id="innerToolTip" style="position:absolute;">
-        <div id="accuracyDiv" style="color:#4cae4c display:none width:135px; left:0px; top:10px; position: absolute;" class="selected">
+        <div id="serveDiv" style="color:#4cae4c display:none width:135px; left:0px; top:10px; position: absolute;" class="selected">
             <div class="header3" style="text-align: center">
-                <br>Accuracy</br></div>
+                <br>1st Serve</br></div>
             <div class="header-rule"></div>
-            <div id="accuracyValue" class="header4"></div>
+            <div id="serveValue" class="header4"></div>
         </div>
         <div id="acesDiv" style="color:#eea236 width:125px; left:140px; top:10px; position: absolute;">
             <div class="header3" style="text-align: center">

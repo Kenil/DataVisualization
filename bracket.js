@@ -106,11 +106,11 @@ function update(source) {
                 innerToolTipDiv.innerHTML = tempInnerHTML;
                 roundDiv.innerHTML = d.round + ' Round';
 
-                var accuracyDiv = document.getElementById('accuracyValue');
+                var serveDiv = document.getElementById('serveValue');
                 if (d.firstServe)
-                    accuracyDiv.innerHTML = d.firstServe;
+                    serveDiv.innerHTML = d.firstServe;
                 else
-                    accuracyDiv.innerHTML = 'N/A';
+                    serveDiv.innerHTML = 'N/A';
                 var acesDiv = document.getElementById('acesValue');
                 if (d.ace)
                     acesDiv.innerHTML = d.ace;
@@ -287,7 +287,7 @@ function zoom() {
 
 
 
-$('body').on('click', '.btn-group button', function (e) {
+$('body').on('click', '.btn-group-vertical button', function (e) {
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
 
@@ -315,7 +315,7 @@ function setNodeColor() {
             linkColor = "steelblue",
             linkWidth = "1.5x",
             linkColorOpacity = "0.5"
-    } else if (selectedAttribute == "Accuracy") {
+    } else if (selectedAttribute == "1st Serve") {
         nodeColor = "#5cb85c",
             nodeColorOpacity = "0.5",
             nodeBorderColor = "#006400",
@@ -344,7 +344,7 @@ function calculateStrokeWidth(d) {
     var temp = null, linkWidthTemp;
     if(selectedAttribute == "None") {
         linkWidth =  "1.5px";
-    } else if(selectedAttribute == "Accuracy") {
+    } else if(selectedAttribute == "1st Serve") {
         if (d.firstServe)
             temp = (parseFloat(d.firstServe) / 100) * 50;
         else
@@ -374,7 +374,7 @@ function findTextToDisplay(d) {
     var tempText = null;
     if(selectedAttribute == "None") {
         tempText =  " ";
-    } else if(selectedAttribute == "Accuracy") {
+    } else if(selectedAttribute == "1st Serve") {
         if (node.firstServe)
             tempText = node.firstServe;
         else

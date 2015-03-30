@@ -71,7 +71,7 @@ div#acesDiv {
     color: #eea236;
 }
 
-div#accuracyDiv {
+div#serveDiv {
     font-weight: bold;
     text-decoration: underline;
     color: #4cae4c;
@@ -85,7 +85,7 @@ div#tooltipTail {
    /* background: url("images/tail_white.png") 50% 0%;*/
 }
 
-div#accuracyValue {
+div#serveValue {
      text-align: center;
     text-decoration: none !important;
     font-weight: normal !important;
